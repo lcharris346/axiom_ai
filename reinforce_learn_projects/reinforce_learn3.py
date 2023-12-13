@@ -75,13 +75,12 @@ POLICIES ; {
 # Pieces containing Policies
 
 class Entity(object):
-    def __init__(self, name, type, label, color, policy):
+    def __init__(self, name, type, label, place, policy):
         self.name = ""
         self.type = ""
         self.label = ""
-        self.square = ""
-        self.color = None
-        self.valid_actions = []
+        self.place = ""
+        self.potential_places = []
         self.policy = policy
 
 
